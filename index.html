@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class hover</title>
+    <style>
+
+        h1:hover {
+            color:red;
+            background-color: blue;
+            height: 200px;
+            width: 400px;
+            text-align: center;
+            margin-left: 100px;
+            margin-top: 100px;
+
+        }
+
+        .first-input:focus {
+
+            color:red;
+        }
+        a:visited {
+
+            color:yellow;
+        }
+        li:first-child {
+
+            color:yellow;
+            background-color: black;
+        }
+        li:last-child {
+
+            color:yellow;
+            background-color: black;
+        }
+
+        li:nth-child(2n) {
+
+            color:yellow;
+            background-color: black;
+        }
+
+        h2::before {
+
+            content: 'i';
+        }
+
+        h2::after {
+
+            content: 'u';
+}
+     form{
+         display: flex;
+         flex-direction: column;
+     }
+     .login-form{
+
+        display: flex;
+        justify-content: center;
+     }
+
+     .login-form input[type="text"] ,input[type="password"] {
+
+       border: 1px solid red;
+       font-size: 20px;
+       padding-left: 10px;
+     }
+
+     .login-form input[type="text"]:focus {
+
+        color: burlywood;
+     }
+
+
+     .login-form input[type="search"] {
+
+        width: 80px;
+        height: 30px;
+        border: 2px solid grey;
+        border:0 0 2px 0;
+        text-align: center;
+        margin-left: 50px;
+        transition: transform 2s linear;
+     }
+
+     .login-form input[type="search"]:hover {
+
+        transform: translateX(100px);
+    }
+
+     .login-form input[type="text"]:nth-child(2){
+        /* kaj korena */
+        background-color: blueviolet;
+        padding-left: 20px;
+        font-size: 40px;
+     }
+
+     span {
+      font-size: 12px;
+    }
+    a {
+      color: green;
+    }
+    .test1>a:hover span {
+      display: none;
+    }
+    .test1>a:hover:before {
+      color: red;
+      content: "Apple";
+    }
+
+
+     
+           
+    </style>
+</head>
+<body>
+
+    <h1>i love design</h1>
+    <input class="first-input" type="text">
+    <input type="text">
+    <input type="text"> <br>
+    <a href="https://www.facebook.com">first click</a>
+    <a href="https://www.google.com">second click</a>
+    <a href="https://habibullah039.github.io/my-first-website/">third click</a>
+
+    <div class="login-form">
+       
+        <form action="">
+
+             <h1>Please login</h1>
+            <label for="name">Nmae:</label>
+            <input type="text" name="name" placeholder="sure name" id="name">
+            <label for="first-name">First name:</label>
+            <input type="text" name="name"  placeholder="first name" id="first-name">
+            <label for="last-name">Last name:</label>
+            <input type="text" name="name"  placeholder="last name" id="last-name">
+            <label for="password">Your password:</label>
+            <input type="password" name="password" id="password">
+            <label for="c-password">Conform password</label>
+            <input type="password" name="password" id="c-password">
+            <input type="search" name="search" id="search" placeholder="search">
+            <input type="submit" value="Login">
+    
+        </form>
+
+    </div>
+
+    
+
+    <ul>
+        <li>i love kaku</li>
+        <li>i love kaku</li>
+        <li>i love kaku</li>
+        <li>i love kaku</li>
+        <li>i love kaku</li>
+        <li>i love kaku</li>
+    </ul>
+
+
+    <h2>hate love</h2>
+    <h2>hate love</h2>
+    <h2>hate love</h2>
+    <h2>hate love</h2>
+    <h2>hate love</h2>
+    <h2>hate love</h2>
+
+    <div class="test1">
+        <a href="#"><span>Google</span></a>
+      </div>
+      <div class="test2">
+        <a href="#"><span>Apple</span></a>
+      </div>
+
+    <h3>i love bangladesh</h3>
+</body>
+</html>
